@@ -64,7 +64,7 @@ const Card = () => {
               {product.images.map((img, idx) => (
                 <img
                   key={idx}
-                  src={`${import.meta.env.VITE_API_BASE_URL}${img.url}`}
+                  src={`https://buyitecommerce.onrender.com/${img.url}`}
                   alt={img.alt || "product image"}
                   className='h-24 w-24 object-cover rounded'
                 />

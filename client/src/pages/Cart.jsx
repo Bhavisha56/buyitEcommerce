@@ -98,7 +98,7 @@ const Cart = () => {
           {item.images && item.images.map((img, imgIdx) => ( 
   <li key={imgIdx} className="cursor-pointer">
     <img 
-      src={`https://buyitecommerce.onrender.com${img.url}`} 
+      src={`https://buyitecommerce.onrender.com/${img.url}`} 
       alt={img.alt || "Product Image"} 
       className="w-20 h-20 object-contain" 
     />
