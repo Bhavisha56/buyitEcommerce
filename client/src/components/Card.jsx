@@ -10,7 +10,7 @@ const Card = () => {
   const Navigate=useNavigate()
   const fetchProducts = async () => {
     try {
-      const response = await fetch(`http://localhost:5001/api/products/all`, {
+      const response = await fetch(`https://buyit-backend.onrender.com/api/products/all`, {
         method: "GET",
         headers: {
           "Content-Type": "application/json",

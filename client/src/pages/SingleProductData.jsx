@@ -18,7 +18,7 @@ const SingleProductData = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       try {
-        const res = await fetch(`http://localhost:5001/api/products/product/${id}`);
+        const res = await fetch(`https://buyit-backend.onrender.com/api/products/product/${id}`);
         const data = await res.json();
        
         
@@ -42,7 +42,7 @@ const SingleProductData = () => {
     };
   
     try {
-      const response = await fetch(`http://localhost:5001/api/cart`, {
+      const response = await fetch(`https://buyit-backend.onrender.com/api/cart`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -100,7 +100,7 @@ const SingleProductData = () => {
         <div className="grid grid-cols-2 gap-10 max-w-5xl shadow-lg p-10 rounded-xl">
           <img
             className="w-full h-[400px] object-cover rounded-xl"
-            src={`http://localhost:5001${product.images[0].url}`}
+            src={`https://buyit-backend.onrender.com${product.images[0].url}`}
             alt={product.images[0].alt}
           />
           <div className="space-y-4">

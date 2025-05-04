@@ -65,7 +65,7 @@ const Navigate=useNavigate()
       Navigate("/Order");
     }, 2000);
     try {
-      const res = await fetch(`http://localhost:5001/api/order/buy`, {
+      const res = await fetch(`https://buyit-backend.onrender.com/api/order/buy`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
