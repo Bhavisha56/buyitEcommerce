@@ -10,7 +10,7 @@ const Order = () => {
   const [orderitem,setOrderitem]=useState([])
   const fetchitems=async()=>{
    try {
-    const res=await fetch(`https://buyit-backend.onrender.com/api/order`,{
+    const res=await fetch(`https://buyitecommerce.onrender.com/api/order`,{
       method:"GET",
       headers:{
         "Content-Type":"application/json",
@@ -27,7 +27,7 @@ const Order = () => {
   }
   const deleteitem=async(id)=>{
     try {
-      const res=await fetch(`https://buyit-backend.onrender.com/api/order/delete/${id}`,{
+      const res=await fetch(`https://buyitecommerce.onrender.com/api/order/delete/${id}`,{
         method:"DELETE",
         headers:{
           "Content-Type":"application/json",
@@ -71,7 +71,7 @@ useEffect(() => {
         {item.images.map((img,imgidx)=>(
         <img  
         key={imgidx}
-      src={`https://buyit-backend.onrender.com${img.url}`} 
+      src={`https://buyitecommerce.onrender.com${img.url}`} 
       alt={img.alt || "Product Image"} 
       className="w-20 h-20 object-contain" />
     ))}

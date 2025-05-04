@@ -12,7 +12,7 @@ const Cart = () => {
 
   const updateQuantityInDB = async (itemId, quantity) => {
     try {
-      await fetch(`https://buyit-backend.onrender.com/api/cart/cart/update/${itemId}`, {
+      await fetch(`https://buyitecommerce.onrender.com/api/cart/cart/update/${itemId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ const Cart = () => {
     
   const handleDelete=async(itemid)=>{
   try {
-    const res=await fetch(`https://buyit-backend.onrender.com/api/cart/delete/${itemid}`,{
+    const res=await fetch(`https://buyitecommerce.onrender.com/api/cart/delete/${itemid}`,{
       method:"DELETE",
       credentials:'include'
     })
@@ -98,7 +98,7 @@ const Cart = () => {
           {item.images && item.images.map((img, imgIdx) => ( 
   <li key={imgIdx} className="cursor-pointer">
     <img 
-      src={`https://buyit-backend.onrender.com${img.url}`} 
+      src={`https://buyitecommerce.onrender.com${img.url}`} 
       alt={img.alt || "Product Image"} 
       className="w-20 h-20 object-contain" 
     />

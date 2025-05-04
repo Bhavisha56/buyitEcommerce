@@ -23,7 +23,7 @@ const ForgetPassword = () => {
     e.preventDefault();
 
     try {
-      const res = await fetch(`https://buyit-backend.onrender.com/api/auth/forgetpassword`, {
+      const res = await fetch(`https://buyitecommerce.onrender.com/api/auth/forgetpassword`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

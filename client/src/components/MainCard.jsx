@@ -11,7 +11,7 @@ const MainCard = () => {
   useEffect(() => {
     const fetchFormain = async () => {
       try {
-        const res = await fetch(`https://buyit-backend.onrender.com/api/main/all`, {
+        const res = await fetch(`https://buyitecommerce.onrender.com/api/main/all`, {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -60,7 +60,7 @@ const MainCard = () => {
                   {item.images.map((img, idx) => (
                     <img
                       key={idx}
-                      src={`https://buyit-backend.onrender.com${img.url}`}
+                      src={`https://buyitecommerce.onrender.com${img.url}`}
                       alt={img.alt || 'product image'}
                       className="h-24 w-24 object-cover rounded"
                     />
