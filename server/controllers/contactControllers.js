@@ -14,7 +14,7 @@ const contactDataAdd=async(req,res)=>{
     user:userId
    }) 
    await createMessageContact.save()
-   res.status(200).json({msg:"contactdataAdded"},createMessageContact)
+   res.status(200).json({ msg: "contactdataAdded", contact: createMessageContact });
 
    } catch(error) {
     console.error(error);

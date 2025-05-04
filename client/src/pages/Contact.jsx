@@ -39,7 +39,8 @@ const handleInput=(e)=>{
 const handleSubmit=async(e)=>{
   e.preventDefault()
   if(!user.message || !user.email || !user.name){
-    alert("All Fields are required")
+    alert("All Fields are required");
+    return
   }
   try {
     const res=await fetch(`https://buyitecommerce.onrender.com/api/contact/contactin`,{
@@ -50,6 +51,8 @@ const handleSubmit=async(e)=>{
       body:JSON.stringify(user),
       credentials:'include'
     })
+    console.log(res);
+    
     if(res.ok){
       toast.success("Message Sent", {
         position: "top-right",
