@@ -33,7 +33,6 @@ Thumbs.db
 .idea/
 
 # Uploads or temporary files
-uploads/
 tmp/
 # Logs
 logs
