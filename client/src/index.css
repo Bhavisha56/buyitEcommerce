@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/font/Gilroy-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body {
+    font-family: 'MyCustomFont', sans-serif;
+  }
+  
+  .filter{
+    height: 55rem;
+  }
+  .cart{
+    background-color: #1c1c1c; /* or use tailwind: bg-zinc-800 */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+ .img{
+  width: 30rem;
+  height: 30rem;
+ }
+  
+ .loader {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  position: relative;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animloader 2s linear infinite;
+}
+.loader::after {
+  animation-delay: 1s;
+}
+
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+  @import url('https://fonts.cdnfonts.com/css/beyonders');
+
+
+
+
+.move{
+    /* background-color: ; */
+    /* color: white; */
+    display: flex;
+    padding: 3vw 0;
+    overflow: hidden;
+}
+.marque{
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    padding: 0 1.5vw;
+    transform: translateX(-100%);
+    
+}
+.marque h1{
+    font-size: 70px;
+    font-family: 'Beyonders', sans-serif; /* or use the class: class="font-beyonders" */
+}
+.marque img{
+height: 80px;
+}
+
