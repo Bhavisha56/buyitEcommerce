@@ -100,7 +100,7 @@ const SingleProductData = () => {
         <div className="grid grid-cols-2 gap-10 max-w-5xl shadow-lg p-10 rounded-xl">
           <img
             className="w-full h-[400px] object-cover rounded-xl"
-            src={`https://buyitecommerce.onrender.com/${product.images[0].url}`}
+            src={`https://buyitecommerce.onrender.com${product.images[0].url}`}
             alt={product.images[0].alt}
           />
           <div className="space-y-4">
