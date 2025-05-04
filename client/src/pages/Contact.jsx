@@ -42,7 +42,7 @@ const handleSubmit=async(e)=>{
     alert("All Fields are required")
   }
   try {
-    const res=await fetch(`https://buyitecommerce.onrender.com/api/contact/`,{
+    const res=await fetch(`https://buyitecommerce.onrender.com/api/contact/contactin`,{
       method:"POST",
       headers:{
         "Content-Type":"application/json",

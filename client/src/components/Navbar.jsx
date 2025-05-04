@@ -18,7 +18,6 @@ const {isloggedin,setIsloggedin,cartitem}=useAuth()
     if(res.ok){
       const data=await res.json();
       setOrderitem(data.items)
-      fetchitems()
     }
    } catch(error) {
     console.error(error);

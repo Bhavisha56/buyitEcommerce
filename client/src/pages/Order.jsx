@@ -46,7 +46,7 @@ const Order = () => {
           theme: "light",
           transition: Bounce
         });
-   fetchitems()
+        fetchitems()
       }
       
     } catch(error) {
@@ -55,7 +55,7 @@ const Order = () => {
   }
 useEffect(() => {
   fetchitems()
-}, [])
+},[])
 
 
   return (
